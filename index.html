@@ -1,48 +1,51 @@
-<!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Nina Herman</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nina Herman</title>
+  </head>
+  <body>
+    <section class="game">
+      <div class="intro">
+        <h1>Nina Herman</h1>
+        <input
+          type="image"
+          src="assets/elderwand.png"
+          width="140px"
+          name="saveForm"
+          class="btTxt submit"
+          id="saveForm"
+        />
+      </div>
+      <div class="match fadeOut">
+        <!-- <div class="sidenav">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div> -->
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Nina Herman</h1>
-						<p>Student at Dartmouth College &nbsp;&bull;&nbsp; Computer Science Major </p>
-						<nav>
-							<ul>
-								<li><a href="https://www.linkedin.com/in/nina-herman/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://drive.google.com/file/d/1NCJ3WA5Tbtwt4mtrbETihIOMWVEiq_gm/view?usp=sharing" class="far fa-file"><span class="label">Resume</span></a></li>
-								<li><a href="https://github.com/nherman222" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-						</nav>
-					</header>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright"> Nina Herman </span>
-					</footer>
-
-			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+        <div class="header">
+          <a href="about.html" class="main">Nina Herman</a>
+          <div class="header-right">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a
+              href="https://drive.google.com/file/d/1NCJ3WA5Tbtwt4mtrbETihIOMWVEiq_gm/view?usp=sharing"
+              >Resume</a
+            >
+          </div>
+        <!-- <div class="home-text" style="padding-left: 20px;">
+          <h1>Responsive Header</h1>
+          <p>Resize the browser window to see the effect.</p>
+          <p>Some content..</p>
+        </div> -->
+        <!-- <img src="assets/me.jpg" id="me" /> -->
+        
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
 </html>
