@@ -22,6 +22,7 @@
 }
 
 html {
+  /* background from: https://www.itl.cat/wallview/TimxoR_storm-live-wallpaper-dark-storm-clouds-hd/ */
   background: url(/assets/clouds2.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -318,6 +319,96 @@ div.desc {
   content: "";
   display: table;
   clear: both;
+}
+
+/* preloader */
+
+.preload {
+  visibility: hidden;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+}
+
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* #hogwarts {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-size: cover;
+  background-position: center bottom;
+} */
+
+#hp-flying {
+  width: 150px;
+  animation: hpfly 0.7s ease infinite alternate;
+}
+
+.star1,
+.star2,
+.star3,
+.star4,
+.star5 {
+  height: 50px;
+  position: absolute;
+}
+
+.star1 {
+  top: 15%;
+  transform: translate(100%, -25%);
+  animation: stars 3s ease infinite;
+}
+
+.star2 {
+  top: 30%;
+  transform: translate(100%, -50%);
+  animation: stars 3s ease infinite 2s;
+}
+
+.star3 {
+  top: 45%;
+  transform: translate(100%, -75%);
+  animation: stars 3s ease infinite 3s;
+}
+
+.star4 {
+  top: 60%;
+  transform: translate(100%, -25%);
+  animation: stars 3s ease infinite 4ms;
+}
+
+.star5 {
+  top: 75%;
+  transform: translate(100%, -50%);
+}
+
+@keyframes hpfly {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes stars {
+  from {
+    right: 0%;
+  }
+  to {
+    right: 130%;
+  }
 }
 
 @keyframes text {
