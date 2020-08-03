@@ -1,3 +1,3 @@
 # harry potter themed webpage
 
-this was my old website that was pretty sick but also kinda ugly
+previous version of about me website - harry potter themed with a bit of animation! made from learning css & html & javascript through youtube
